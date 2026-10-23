@@ -2,7 +2,7 @@
 
 Upload a text-based PDF and ask questions about it. Answers come **only** from the document, cite page numbers, and the app refuses when the document does not cover the question. Retrieval quality is measured with a small evaluation harness instead of being assumed.
 
-**Demo:** _[add a link or a screen recording]_  
+
 **Stack:** FastAPI, LangChain components, Chroma, sentence-transformers, Groq, vanilla HTML/CSS/JS, pytest, Docker
 
 ![screenshot](Screenshot.png)
@@ -172,7 +172,3 @@ DECISIONS.md       log of experiments, failures and decisions
 - Index large uploads in the background with a progress bar.
 - Replace the deprecated `langchain-community` PDF loader.
 - Add CI to run the tests and the Docker build on every push.
-
-## What I learned
-
-_Write 3 or 4 sentences in your own words: the page-offset bug and how you found it, why MRR told you more than recall, and what you would change first._
