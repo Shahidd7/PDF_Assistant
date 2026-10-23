@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Q&A</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Ask Your PDF</h1>
+      <p>Upload a text-based PDF. Answers come only from it, with page citations.</p>
+    </header>
+
+    <section class="upload">
+      <input id="file" type="file" accept="application/pdf">
+      <button id="upload-btn" type="button">Upload PDF</button>
+      <span id="status">No PDF loaded.</span>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite"></section>
+
+    <form id="form" class="composer">
+      <input id="question" type="text" maxlength="500"
+             placeholder="Upload a PDF first…" autocomplete="off" required disabled>
+      <button id="send" type="submit" disabled>Ask</button>
+    </form>
+  </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>

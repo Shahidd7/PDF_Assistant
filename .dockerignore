@@ -1,0 +1,9 @@
+.venv
+.env
+.git
+__pycache__
+*.pdf
+evals
+tests
+chroma_db
+*.jsonl
