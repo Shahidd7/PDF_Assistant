@@ -41,8 +41,3 @@ index times varied between runs on a dual-core CPU.
 - First build failed at runtime: `langchain_chroma` was missing from requirements.txt
   (it was installed locally but not listed). Fixed by listing every direct import.
 - fill: image size, and that you ran it and uploaded a PDF successfully.
-
-## Next experiments
-1. Skip front and back matter when indexing.
-2. Add a cross-encoder reranker and compare MRR on q10, q18, q19.
-3. Re-run the whole evaluation on a freely licensed document.
